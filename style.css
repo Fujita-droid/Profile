@@ -257,7 +257,9 @@ header{
     font-size: 1.5vw;
 
 }
-
+.fadein-img{
+    width: 60%;
+}
 
 
 /* 見出し線 */
