@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>面接用</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+
+  <script type="text/javascript">
+//   スライダー
+    $(document).ready(function(){
+        $('.slider').bxSlider({
+            auto: true,
+            pause: 8000,
+        });
+    });
+// ボディのフワッと
+    $(function(){
+    $(window).scroll(function (){
+        $('figure').each(function(){
+            var targetElement = $(this).offset().top;
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+            if (scroll > targetElement - windowHeight + 200){
+                $(this).css('opacity','1');
+                $(this).css('transform','translateY(0)');
+            }
+        });
+    });
+});
+
+</script>
+
+
+<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+</head>
+<body>
+    <div class="humb">
+        <div id="nav-drawer">
+            <input id="nav-input" type="checkbox" class="nav-unshown">
+            <label id="nav-open" for="nav-input"><span></span></label>
+            <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+            <div id="nav-content">
+                <ul>
+                    <li><a href="#"><i class="fab fa-pagelines"></i> ABOUT</a></li>
+                    <li><a href="#"><i class="fab fa-pagelines"></i> NEWS</a></li>
+                    <li><a href="#"><i class="fab fa-pagelines"></i> CAREERS</a></li>
+                    <li><a href="#"><i class="fab fa-pagelines"></i> CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="logo">Profile</div>
+    </div>
+
+    <header>
+    <div class="title">
+        <h2>Profile</h2>
+        <div class="top">
+            <a href="#">ABOUT</a>
+            <a href="#">NEWS</a>
+            <a href="#">CAREERS</a>
+            <a href="#">CONTACT</a>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="slider">
+        <div class="hana">
+            <img src="img/keyboard-338507_1920.jpg" alt="">
+            <p>ご覧いただきありがとうございます。
+                <br>
+                リンク先は全て設定しておりません。ご了承ください。
+                <br>
+                ※レスポンシブ対応
+            </p>
+        </div>
+        <div class="hana">
+            <img src="img/startup-593344_1280.jpg" alt="">
+            <!-- <p>kekeke</p> -->
+        </div>
+        <div class="hana">
+            <img src="img/keyboard-690066_1920.jpg" alt="">
+            <!-- <p>popopo</p> -->
+        </div>
+    </div>
+
+    <div class="fadein">
+        <figure><img src="img/自己紹介.png" alt="" width="60%">
+            <div class="a2">
+                <img src="img/新職歴.png" alt="" width="100%">
+            </div></figure>
+        <figure class="b"><img src="img/skill.png" alt="" width="60%">
+        <div class="b2">
+            <h3>詳細</h3>
+            <dl>
+                <div class="to-gray">
+                    <dt>HTML&CSS</dt>
+                    <dd>AirbnbとiSaraのサイトを模写しスキル習得。</dd>
+                </div>
+                <div class="to-none">
+                    <dt>jQuery</dt>
+                    <dd>モーダルウィンドウとアコーディオンメニューの実装経験有り。</dd>
+                </div>
+                <div class="to-gray">
+                    <dt>Photoshop</dt>
+                    <dd>YouTubeのサムネイルを100枚以上作成経験有り。ある程度の操作可能。</dd>
+                </div>
+                <div class="to-none">
+                    <dt>Illustrator</dt>
+                    <dd>簡単なアイコン作成可能。</dd>
+                </div>
+              </dl>
+        </div></figure>
+        <figure><img src="img/vision.png" alt="" width="60%">
+            <div class="a2">
+                <h3>Webデザイナー</h3>
+                <p class="a3">Web制作を1人で完結出来るよう、沢山のスキルを習得したいです。
+                    業務を丁寧にこなし、変化に強い人材を目指します。
+                </p>
+        </div></figure>
+
+        <div class="news">
+            <h2 class="lil-title">NEWS</h2>
+                <dl class="news-list">
+                    <a href="#">
+                        <dt>2020.05.30</dt>
+                        <dd>オンラインサロンで</dd>
+                        <dd>講師としてサムネイル講座に参加</dd>
+                    </a>
+                    <a href="#">
+                        <dt>2020.03.29</dt>
+                        <dd>お仕事依頼が増え、月収が3倍に！</dd>
+                    </a>
+                    <a href="#">
+                        <dt>2020.01.21</dt>
+                        <dd>初案件獲得(YouTubeサムネイル作成)</dd>
+                    </a>
+                    <a href="#">
+                        <dt>2019.12.29</dt>
+                        <dd>Photoshopの勉強開始</dd>
+                    </a>
+                  </dl>
+        </div>
+    </div>
+
+        <div class="sometypes">
+            <h2>自己PR</h2>
+        </div>
+
+    <div class="original">
+        <div class="org1">
+            <div class="view view-fifth"> 
+                <img src="img/computer-1185626_1280.jpg" alt="">
+                <div class="mask">  
+                    <h2>Hungry spirit</h2>  
+                    <p>完成物でも改善余地がないか考え、より良いものを作るよう意識しています。</p>
+                    <a href="#" class="info">Read More</a>  
+                </div>  
+            </div>  
+            <h3>【ハングリー精神】</h3>
+        </div>
+        <div class="org1">
+            <div class="view view-fifth"> 
+                <img src="img/workplace-1245776_1280.jpg" alt="">
+                <div class="mask">  
+                    <h2>Communication</h2>
+                    <p>チームワークを良くする為、報連相をしっかり行い信頼関係を築いていきます。</p>
+                    <a href="#" class="info">Read More</a>  
+                </div>  
+            </div>  
+            <h3>【コミュニケーション】</h3>
+        </div>
+        <div class="org1">
+            <div class="view view-fifth"> 
+                <img src="img/startup-593344_1280.jpg" alt="">
+                <div class="mask">  
+                    <h2>Energy</h2> 
+                    <p>思い立った時、実現可能か下調べをしっかり行い行動に移していきます。</p>
+                    <a href="#" class="info">Read More</a>  
+                </div>  
+            </div>  
+            <h3>【行動力】</h3>
+        </div>
+
+    </div>
+
+</main>
+
+<footer>
+    <h2>Profile</h2>
+    <p><i class="fas fa-mobile-alt"></i> 000-111-2222</p>
+    <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+    <a href="#"><i class="fab fa-twitter-square fa-2x"></i></a>
+    <a href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
+</footer>
+
+</body>
+</html>
