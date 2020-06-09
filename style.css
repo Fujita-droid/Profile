@@ -24,6 +24,7 @@ header{
     position: fixed;
     z-index: 99;
     width: 100%;
+    text-shadow: 0px 0px 5px #f1eeee;
 }
 
 .title{
@@ -69,7 +70,7 @@ header{
     font-weight: bold;
     top: 60%;
     left: 5%;
-    color: rgb(250, 74, 68);
+    color: rgb(105, 105, 105);
     text-shadow: 1px 2px 2px #ffffff;
 }
 
@@ -258,11 +259,6 @@ header{
 
 }
 
-.fadein-img{
-    width: 60%;
-    height: 60%;
-}
-
 
 /* 見出し線 */
 .fadein h3{
@@ -402,6 +398,8 @@ dt{
     text-transform: uppercase;
     box-shadow: 0 0 1px #000;
     margin: 2%;
+    padding: 2%;
+    font-weight: bold;
 }
 .view a.info:hover {
     box-shadow: 0 0 5px #000
