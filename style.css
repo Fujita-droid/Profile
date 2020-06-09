@@ -258,6 +258,11 @@ header{
 
 }
 
+.fadein-img{
+    width: 60%;
+    height: auto;
+}
+
 
 /* 見出し線 */
 .fadein h3{
