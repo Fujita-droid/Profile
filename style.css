@@ -251,6 +251,7 @@ header{
     width: 100%;
     word-wrap:break-word; 
     font-size: 2vw;
+    height: auto;
 }
 .a3{
     margin: 0;
